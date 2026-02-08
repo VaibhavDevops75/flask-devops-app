@@ -2,11 +2,44 @@
 <html>
 <head>
     <title>Flask Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            animation: floatText 3s infinite alternate ease-in-out;
+        }
+
+        @keyframes floatText {
+            from { transform: translateX(-20px); }
+            to { transform: translateX(20px); }
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>🚀 Welcome to My Flask Website</h1>
-    <p>This site is running inside Flask.</p>
-    <a href="/about">Go to About Page</a>
+    <div class="container">
+        <h1>🚀 Welcome to My Flask Website</h1>
+        <p>This site is running inside Flask.</p>
+        <a href="/about">Go to About Page</a>
+    </div>
 </body>
 </html>
 
